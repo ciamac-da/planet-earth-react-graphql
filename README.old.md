@@ -1,1 +1,0 @@
-# space-x-react-graphql
