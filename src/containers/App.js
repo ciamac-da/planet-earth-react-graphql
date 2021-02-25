@@ -4,7 +4,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/client";
 import { CountriesContainer } from './countriesContainer';
 import WrongPath from "../components/common/404/404";
-
+import MyAppBar from '../components/common/Header/Header';
 
 
 const App = () =>{
@@ -13,6 +13,7 @@ const App = () =>{
   });
   return (
     <ApolloProvider client={client}>
+    <MyAppBar />
     {/*   <CountriesContainer /> */}
       <Router>
       <Switch>

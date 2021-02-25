@@ -13,14 +13,13 @@ const useStyles = makeStyles((theme) => ({
             justifyContent: "center",
             textAlign: "center",
             margin:0,
-            paddingTop:"60px",
             backgroundImage: `url(${EarthImage})`, 
             height:"100vh",
             objectFit:"cover"
       },
       span404: {
             fontSize: "60px",
-            color: "orange",
+            color: "yellow",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             paddingTop: "70px",
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: "20px",
       },
       myButton: {
-            backgroundColor: "orange",
+            backgroundColor: "yellow",
             fontWeight: "bolder",
             textDecoration:"inherit !important",
             "&:hover":{
