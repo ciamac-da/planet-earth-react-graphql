@@ -10,17 +10,17 @@ import useStyles from "./404Style";
 
 const NotFound = () => {
       const classes = useStyles();
-      const WrongPathPageTitle = "Mars Tischtennis 2020 e.V./Page not found!";
+      const WrongPathPageTitle = "Page not found!";
 
       return (
             <Page loader={"bar"} color={"white"} size={9} duration={1}>
                   <Helmet>
                         <title>{WrongPathPageTitle}</title>
                   </Helmet>
-                  <Flip left>
                         <div
                               className={classes.divStyle}
                         >
+                  <Flip left>
                               <Typography>
                                     <b>
                                           <span
@@ -31,13 +31,13 @@ const NotFound = () => {
                                     </b>
                                     <span
                                           className={classes.spanText}>
-                                          Hoppla! Ein Fehler ist aufgetreten!
+                                         Oops! An error has occurred!
                                     </span>
                               </Typography>
                               <Typography
                                     className={classes.errorText}
                               >
-                                    Die angeforderte URL wurde auf diesem Server nicht gefunden!
+                                   The requested URL was not found on this server!
                               </Typography>
                               <Link
                                to="/"
@@ -47,11 +47,11 @@ const NotFound = () => {
                                           className={classes.myButton}
                                     >
                                           <NavigateBeforeIcon />
-                                     Zurück
+                                     Back
                                    </Button>
                               </Link>
+                    </Flip>
                         </div>
-                  </Flip>
             </Page>
       );
 };

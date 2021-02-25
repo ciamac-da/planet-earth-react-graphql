@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import EarthImage from '../../../assets/planet-earth.jpg';
+
 
 const useStyles = makeStyles((theme) => ({
       root: {
@@ -7,34 +9,35 @@ const useStyles = makeStyles((theme) => ({
             },
       },
       divStyle: {
-            marginTop: "200px",
             alignItems: "center",
             justifyContent: "center",
-            textAlign: "center"
+            textAlign: "center",
+            margin:0,
+            paddingTop:"60px",
+            backgroundImage: `url(${EarthImage})`, 
+            height:"100vh",
+            objectFit:"cover"
       },
       span404: {
             fontSize: "60px",
             color: "orange",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
-            fontFamily: '"Titillium Web", sans-serif !important',
-            fontFamily: "'Open Sans', sans-serif !important",
+            paddingTop: "70px",
+           
       },
       spanText: {
             fontSize: "25px",
             color: "white",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
-            fontFamily: '"Titillium Web", sans-serif !important',
-            fontFamily: "'Open Sans', sans-serif !important",
+           
       },
       errorText: {
             fontSize: "25px",
             color: "white",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
-            fontFamily: '"Titillium Web", sans-serif !important',
-            fontFamily: "'Open Sans', sans-serif !important",
             marginBottom: "20px",
       },
       myButton: {
@@ -42,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
             fontWeight: "bolder",
             textDecoration:"inherit !important",
             "&:hover":{
-                  backgroundColor:"black",
-                  color:"orange",
+                  backgroundColor:"white",
+                  color:"black",
             }
       },
       link:{

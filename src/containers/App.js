@@ -13,7 +13,6 @@ const App = () =>{
   });
   return (
     <ApolloProvider client={client}>
-     <h1>hi, I'm a User</h1>
     {/*   <CountriesContainer /> */}
       <Router>
       <Switch>
