@@ -1,23 +1,17 @@
 {
   "files": {
-    "main.css": "/planet-earth-react-app/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/planet-earth-react-app/static/js/main.e4041cd0.chunk.js",
-    "main.js.map": "/planet-earth-react-app/static/js/main.e4041cd0.chunk.js.map",
-    "runtime-main.js": "/planet-earth-react-app/static/js/runtime-main.c3da2f66.js",
-    "runtime-main.js.map": "/planet-earth-react-app/static/js/runtime-main.c3da2f66.js.map",
-    "static/js/2.c1df4576.chunk.js": "/planet-earth-react-app/static/js/2.c1df4576.chunk.js",
-    "static/js/2.c1df4576.chunk.js.map": "/planet-earth-react-app/static/js/2.c1df4576.chunk.js.map",
-    "static/js/3.e6e21f76.chunk.js": "/planet-earth-react-app/static/js/3.e6e21f76.chunk.js",
-    "static/js/3.e6e21f76.chunk.js.map": "/planet-earth-react-app/static/js/3.e6e21f76.chunk.js.map",
+    "main.js": "/planet-earth-react-app/static/js/main.048485f4.chunk.js",
+    "main.js.map": "/planet-earth-react-app/static/js/main.048485f4.chunk.js.map",
+    "runtime-main.js": "/planet-earth-react-app/static/js/runtime-main.810f8b78.js",
+    "runtime-main.js.map": "/planet-earth-react-app/static/js/runtime-main.810f8b78.js.map",
+    "static/js/2.f08a53f2.chunk.js": "/planet-earth-react-app/static/js/2.f08a53f2.chunk.js",
+    "static/js/2.f08a53f2.chunk.js.map": "/planet-earth-react-app/static/js/2.f08a53f2.chunk.js.map",
     "index.html": "/planet-earth-react-app/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/planet-earth-react-app/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c1df4576.chunk.js.LICENSE.txt": "/planet-earth-react-app/static/js/2.c1df4576.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/planet-earth-react-app/static/media/logo.6ce24c58.svg"
+    "static/js/2.f08a53f2.chunk.js.LICENSE.txt": "/planet-earth-react-app/static/js/2.f08a53f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3da2f66.js",
-    "static/js/2.c1df4576.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.e4041cd0.chunk.js"
+    "static/js/runtime-main.810f8b78.js",
+    "static/js/2.f08a53f2.chunk.js",
+    "static/js/main.048485f4.chunk.js"
   ]
 }
