@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
       },
       span404: {
             fontSize: "60px",
-            color: "yellow",
+            color: "gold",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             position: "relative",
@@ -63,14 +63,14 @@ const useStyles = makeStyles((theme) => ({
             top:"300px",
       },
       myButton: {
-            backgroundColor: "yellow",
+            backgroundColor: "gold",
             fontWeight: "bolder",
             textDecoration:"inherit !important",
             position: "relative",
             top:"300px",
             "&:hover":{
-                  backgroundColor:"white",
-                  color:"black",
+                  backgroundColor:"red",
+                  color:"white",
             }
       },
       link:{

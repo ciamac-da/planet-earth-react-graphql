@@ -43,23 +43,23 @@ const useStyles = makeStyles((theme) =>({
     },
   t1:{
      color: "blue",
-     fontWeight: "bolder",
-     backgroundColor: "silver",
+     fontWeight: "bolder !important",
+     backgroundColor: "white",
      borderRadius:"5px 0px 0px 5px",
      textShadow:"0px 1px 2px black",
 
     },
      t2:{
          color: "green",
-         fontWeight: "bolder",
-         backgroundColor: "silver",
+         fontWeight: "bolder !important",
+         backgroundColor: "white",
          textShadow:"0px 1px 2px black",
          },
 
          t3:{
           color: "gold",
-          fontWeight: "bolder",
-          backgroundColor: "silver",
+          fontWeight: "bolder !important",
+          backgroundColor: "white",
           borderRadius:"0px 5px 5px 0px",
           textShadow:"0px 1px 2px black",
          },
