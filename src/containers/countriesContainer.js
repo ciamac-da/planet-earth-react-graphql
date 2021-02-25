@@ -2,11 +2,11 @@ import React from "react";
 import { useQuery } from '@apollo/react-hooks';
 import { GET_COUNTRIES } from '../graphql/get-countries';
 import { Countries } from "../components/Countries/Countries";
-import useStyles from "./countriesContainerStyle";
+import myStyle from "./countriesContainerStyle";
 
 export const CountriesContainer = () =>{
 
-    const classes = useStyles()
+    const classes = myStyle()
      const { data: { users = []} = {}  } = useQuery(GET_COUNTRIES,{
      variables: { limit: 20}
  });
