@@ -1,5 +1,23 @@
+/*
+.##.....##....###....########.########.########..####....###....##...............##.....##.####
+.###...###...##.##......##....##.......##.....##..##....##.##...##...............##.....##..##.
+.####.####..##...##.....##....##.......##.....##..##...##...##..##...............##.....##..##.
+.##.###.##.##.....##....##....######...########...##..##.....##.##.......#######.##.....##..##.
+.##.....##.#########....##....##.......##...##....##..#########.##...............##.....##..##.
+.##.....##.##.....##....##....##.......##....##...##..##.....##.##...............##.....##..##.
+.##.....##.##.....##....##....########.##.....##.####.##.....##.########..........#######..####
+*/
+/*
+.##..........#####...##.......
+.##....##...##...##..##....##.
+.##....##..##.....##.##....##.
+.##....##..##.....##.##....##.
+.#########.##.....##.#########
+.......##...##...##........##.
+.......##....#####.........##.
+*/
 import { makeStyles } from '@material-ui/core/styles';
-import EarthImage from '../../../assets/planet-earth.jpg';
+import EarthImage from '../../../assets/milkyway.jpeg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -12,17 +30,18 @@ const useStyles = makeStyles((theme) => ({
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            margin:0,
             backgroundImage: `url(${EarthImage})`, 
             height:"100vh",
-            objectFit:"cover"
+            objectFit:"cover",
+            overflow: "hidden"
       },
       span404: {
             fontSize: "60px",
             color: "yellow",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
-            paddingTop: "70px",
+            position: "relative",
+            top:"300px",
            
       },
       spanText: {
@@ -30,6 +49,8 @@ const useStyles = makeStyles((theme) => ({
             color: "white",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
+            position: "relative",
+            top:"300px",
            
       },
       errorText: {
@@ -38,11 +59,15 @@ const useStyles = makeStyles((theme) => ({
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             marginBottom: "20px",
+            position: "relative",
+            top:"300px",
       },
       myButton: {
             backgroundColor: "yellow",
             fontWeight: "bolder",
             textDecoration:"inherit !important",
+            position: "relative",
+            top:"300px",
             "&:hover":{
                   backgroundColor:"white",
                   color:"black",

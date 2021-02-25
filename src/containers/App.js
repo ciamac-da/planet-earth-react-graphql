@@ -5,6 +5,7 @@ import { ApolloProvider } from "@apollo/client";
 import { CountriesContainer } from './countriesContainer';
 import WrongPath from "../components/common/404/404";
 import MyAppBar from '../components/common/Header/Header';
+import Footer from '../components/common/Footer/Footer';
 
 
 const App = () =>{
@@ -22,6 +23,7 @@ const App = () =>{
       <Route path="*" exact         component={WrongPath}     />
         </Switch>
       </Router>
+      <Footer />
     </ApolloProvider>
   );
 }
