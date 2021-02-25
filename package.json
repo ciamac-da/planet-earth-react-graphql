@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ciamac-da.github.io/planet-earth-react-graphql",
+
   "name": "planet-earth-react-graphql",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,10 @@
     "graphql-tag": "^2.12.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-page-loading": "^1.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
