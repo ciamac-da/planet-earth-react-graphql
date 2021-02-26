@@ -8,10 +8,13 @@ const useStyles = makeStyles((theme) =>({
     },
     toolbar:{
         backgroundColor:"rgb(255, 0, 32);",
-        textShadow:"0px 1px 2px black",
+        textShadow:"0px 1px 2px rgb(255, 0, 32)",
         width: "fit-content",
+        transform: "translateX(0px) !important",
+        transition: "1s",
         "&:hover":{
-        transform: "translateX(10px) !important"
+        transform: "translateX(10px) !important",
+        transition: "1s"
       },
       [theme.breakpoints.down('sm')]: {
         margin: "auto"
@@ -35,6 +38,7 @@ const useStyles = makeStyles((theme) =>({
          color: "rgb(29, 148, 0);",
          fontWeight: "bolder !important",
          backgroundColor: "#fff",
+         margin:"3px",
          textShadow:"0px 1px 2px rgb(29, 148, 0)",
          },
 

@@ -5,11 +5,11 @@ const useStyles = makeStyles((theme) => ({
 
     myTable:{
         position:"relative",
-        top:"150px",
+        top:"-15px",
     },
     myList:{
         position:"relative",
-        top:"150px",
+        top:"-10px",
         paddingBottom:"5px",
         backgroundColor: "#0067b3;"
     },
@@ -21,16 +21,16 @@ const useStyles = makeStyles((theme) => ({
         "&:hover":{
             backgroundColor:"darkgreen !important",
             color:"#fff !important",
-            transform: "translateX(10px) !important",
-            transition: "1s"
       }
     },
     myCell:{
          width:"70px",
          textAlign:"center",
+         transform: "translateX(0px) !important",
+         transition: ".5s",
          "&:hover":{
             transform: "translateX(10px) !important",
-            transition: ".8s"
+            transition: ".5s"
       }
     },
     myTypo:{

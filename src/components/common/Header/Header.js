@@ -19,10 +19,12 @@ const AppTopBar = () => {
       &nbsp;
       </Typography>
       <Typography variant="h5" className={classes.t2}>
+      &nbsp;
         GraphQL 
       &nbsp;
       </Typography>
       <Typography variant="h5" className={classes.t3}>
+      &nbsp;
         Countries
       &nbsp;
       </Typography>
