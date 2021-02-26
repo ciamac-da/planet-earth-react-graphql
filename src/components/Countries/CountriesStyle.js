@@ -77,7 +77,9 @@ const useStyles = makeStyles((theme) => ({
     },
     mySpan:{
    display:"flex",
-   flexDirection:"column"
+   flexDirection:"column",
+   position: "relative",
+   right:"35px"
 
     },
     myTypo:{
@@ -134,11 +136,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize:"16px",
         textAlign: "center",
         position: "relative",
-        left: "40px !important",
+        left: "11px !important",
         fontWeight:"bolder !important",
         margin:"-3px",
         [theme.breakpoints.down('sm')]: {
-            left: "10px !important",
+            left: "-10px !important",
           },
           [theme.breakpoints.up('md')]: {
             right: "40px !important",
