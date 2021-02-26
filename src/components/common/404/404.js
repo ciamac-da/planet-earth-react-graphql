@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import Page from "react-page-loading";
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import { Link } from "react-router-dom";
-import Flip from 'react-reveal/Flip';
 import useStyles from "./404Style";
 
 
@@ -20,7 +19,6 @@ const NotFound = () => {
                         <div
                               className={classes.divStyle}
                         >
-                  <Flip left>
                               <Typography>
                                     <b>
                                           <span
@@ -50,7 +48,6 @@ const NotFound = () => {
                                      Back
                                    </Button>
                               </Link>
-                    </Flip>
                         </div>
             </Page>
       );
