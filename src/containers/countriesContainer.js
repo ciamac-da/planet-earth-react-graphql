@@ -12,8 +12,7 @@ export const CountriesContainer = () =>{
  return(
      <div className={classes.Container}>
          {countries && countries.map(country => {
-         console.log(countries)
-        return  <Countries key={country.id}  myCountries={country} />
+        return  <Countries key={country.code}  myCountries={country} />
 
          }
          )}
