@@ -16,9 +16,7 @@ const NotFound = () => {
                   <Helmet>
                         <title>{WrongPathPageTitle}</title>
                   </Helmet>
-                        <div
-                              className={classes.divStyle}
-                        >
+                        <div className={classes.divStyle}>
                               <Typography>
                                     <b>
                                           <span

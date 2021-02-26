@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         top:"150px",
         paddingBottom:"5px",
-        backgroundColor: "#f58d06;"
+        backgroundColor: "#0067b3;"
     },
     myRow:{
         fontSize:"30px",
@@ -21,15 +21,23 @@ const useStyles = makeStyles((theme) => ({
         "&:hover":{
             backgroundColor:"darkgreen !important",
             color:"#fff !important",
+            transform: "translateX(10px) !important",
             transition: "1s"
       }
     },
     myCell:{
          width:"70px",
-         textAlign:"center"
+         textAlign:"center",
+         "&:hover":{
+            transform: "translateX(10px) !important",
+            transition: ".8s"
+      }
     },
     myTypo:{
-        color:"#fff"
+        color:"#fff",
+        fontSize:"16px",
+        fontWeight:"bolder !important",
+        margin:"-3px"
     }
 }));
 export default useStyles;
