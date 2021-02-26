@@ -1,11 +1,10 @@
 import  React  from 'react';
 
-export function Countries({users}) {
+export function Countries({myCountries}) {
     return(
-<div className="users">
-<div className="usersId">     <p>{users.id}</p> </div>
-<div className="usersName">   <p>{users.name}</p> </div>
-<div className="usersRocket"> <p>{users.rocket}</p> </div>
+<div className="myCountries">
+<div className="countryName">   <p>{myCountries.name}</p> </div>
+<div className="countryLanguage"> <p>{myCountries.emoji}</p> </div>
 </div>
     )
 }

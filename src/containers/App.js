@@ -3,16 +3,24 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/client";
 import { CountriesContainer } from './countriesContainer';
+import Page from "react-page-loading";
+import { Helmet } from "react-helmet";
 import WrongPath from "../components/common/404/404";
 import MyAppBar from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer';
 
 
 const App = () =>{
+  const MainPageTitle = "React-GraphQL-Countries";
+
   const client = new ApolloClient({
-    uri: 'https://api.spacex.land/graphql/'
+    uri: 'https://countries.trevorblades.com/'
   });
   return (
+    <Page loader={"bar"} color={"white"} size={9} duration={1}>
+    <Helmet>
+    <title>{MainPageTitle}</title>
+    </Helmet>
     <ApolloProvider client={client}>
     <MyAppBar />
     {/*   <CountriesContainer /> */}
@@ -25,6 +33,7 @@ const App = () =>{
       </Router>
       <Footer />
     </ApolloProvider>
+    </Page>
   );
 }
 

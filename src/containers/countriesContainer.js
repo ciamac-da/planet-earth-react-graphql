@@ -7,16 +7,13 @@ import myStyle from "./countriesContainerStyle";
 export const CountriesContainer = () =>{
 
     const classes = myStyle()
-     const { data: { users = []} = {}  } = useQuery(GET_COUNTRIES,{
-     variables: { limit: 20}
+     const { data: { countries = []} = {}  } = useQuery(GET_COUNTRIES,{
  });
  return(
      <div className={classes.Container}>
-         {users && users.map(users => {
-         console.log(users)
-        return  <Countries key={users.id}  users={users} />
-     //   return  <li key={users.id}>{users.name}</li>
-     //   return JSON.stringify(users, null, 2)
+         {countries && countries.map(country => {
+         console.log(countries)
+        return  <Countries key={country.id}  myCountries={country} />
 
          }
          )}
