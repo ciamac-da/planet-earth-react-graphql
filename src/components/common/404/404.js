@@ -36,6 +36,8 @@ const NotFound = () => {
                                     className={classes.errorText}
                               >
                                    The requested URL was not found on this server!
+                                  <br/>
+                                   You're lost in space now!
                               </Typography>
                               <Link
                                to="/"

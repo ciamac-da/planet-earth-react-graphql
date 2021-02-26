@@ -2,12 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import EarthImage from '../../../assets/milkyway.jpeg';
 
 
-const useStyles = makeStyles((theme) => ({
-      root: {
-            '& > *': {
-                  margin: theme.spacing(1),
-            },
-      },
+const useStyles = makeStyles(() => ({
+
       divStyle: {
             alignItems: "center",
             justifyContent: "center",
@@ -19,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
       },
       span404: {
             fontSize: "60px",
-            color: "gold",
+            color: "#f58d06",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             position: "relative",
@@ -28,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
       },
       spanText: {
             fontSize: "25px",
-            color: "white",
+            color: "#fff",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             position: "relative",
@@ -37,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       },
       errorText: {
             fontSize: "25px",
-            color: "white",
+            color: "#fff",
             fontWeight: "bolder",
             textShadow: "2px 2px 2px black",
             marginBottom: "20px",
@@ -45,14 +41,15 @@ const useStyles = makeStyles((theme) => ({
             top:"300px",
       },
       myButton: {
-            backgroundColor: "gold",
+            backgroundColor: "#f58d06",
+            color:"#fff",
             fontWeight: "bolder",
             textDecoration:"inherit !important",
             position: "relative",
             top:"300px",
             "&:hover":{
-                  backgroundColor:"red",
-                  color:"white",
+                  backgroundColor:"rgb(255, 0, 32)",
+                  color:"#fff",
             }
       },
       link:{

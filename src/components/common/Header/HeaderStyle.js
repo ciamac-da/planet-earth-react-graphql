@@ -1,31 +1,13 @@
-/*
-.##.....##....###....########.########.########..####....###....##...............##.....##.####
-.###...###...##.##......##....##.......##.....##..##....##.##...##...............##.....##..##.
-.####.####..##...##.....##....##.......##.....##..##...##...##..##...............##.....##..##.
-.##.###.##.##.....##....##....######...########...##..##.....##.##.......#######.##.....##..##.
-.##.....##.#########....##....##.......##...##....##..#########.##...............##.....##..##.
-.##.....##.##.....##....##....##.......##....##...##..##.....##.##...............##.....##..##.
-.##.....##.##.....##....##....########.##.....##.####.##.....##.########..........#######..####
-*/
-/*
-.##.....##.########....###....########..########.########.
-.##.....##.##.........##.##...##.....##.##.......##.....##
-.##.....##.##........##...##..##.....##.##.......##.....##
-.#########.######...##.....##.##.....##.######...########.
-.##.....##.##.......#########.##.....##.##.......##...##..
-.##.....##.##.......##.....##.##.....##.##.......##....##.
-.##.....##.########.##.....##.########..########.##.....##
-*/
 import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) =>({
 
     appBar:{
-        backgroundColor:"red",
+        backgroundColor:"rgb(255, 0, 32);",
     },
     toolbar:{
-        backgroundColor:"red",
+        backgroundColor:"rgb(255, 0, 32);",
         textShadow:"0px 1px 2px black",
         width: "fit-content",
         "&:hover":{
@@ -42,26 +24,26 @@ const useStyles = makeStyles((theme) =>({
       },
     },
   t1:{
-     color: "blue",
+     color: "#0067b3",
      fontWeight: "bolder !important",
-     backgroundColor: "white",
+     backgroundColor: "#fff",
      borderRadius:"5px 0px 0px 5px",
-     textShadow:"0px 1px 2px black",
+     textShadow:"0px 1px 2px #0067b3",
 
     },
      t2:{
-         color: "green",
+         color: "rgb(29, 148, 0);",
          fontWeight: "bolder !important",
-         backgroundColor: "white",
-         textShadow:"0px 1px 2px black",
+         backgroundColor: "#fff",
+         textShadow:"0px 1px 2px rgb(29, 148, 0)",
          },
 
          t3:{
-          color: "gold",
+          color: "#f58d06;",
           fontWeight: "bolder !important",
-          backgroundColor: "white",
+          backgroundColor: "#fff",
           borderRadius:"0px 5px 5px 0px",
-          textShadow:"0px 1px 2px black",
+          textShadow:"0px 1px 2px #f58d06",
          },
 }));
 export default useStyles;

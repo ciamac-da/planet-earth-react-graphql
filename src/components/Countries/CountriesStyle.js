@@ -11,15 +11,16 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         top:"150px",
         paddingBottom:"5px",
+        backgroundColor: "#f58d06;"
     },
     myRow:{
         fontSize:"30px",
-        color: "white !important",
-        backgroundColor: "green",
+        color: "#fff !important",
+        backgroundColor: "rgb(29, 148, 0)",
         transition: "1s",
         "&:hover":{
             backgroundColor:"darkgreen !important",
-            color:"white !important",
+            color:"#fff !important",
             transition: "1s"
       }
     },
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
          textAlign:"center"
     },
     myTypo:{
-        color:"white"
+        color:"#fff"
     }
 }));
 export default useStyles;

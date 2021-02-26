@@ -1,4 +1,4 @@
-import React, { Fragment }  from 'react';
+import React  from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/client";
@@ -17,7 +17,7 @@ const App = () =>{
     uri: 'https://countries.trevorblades.com/'
   });
   return (
-    <Page loader={"bar"} color={"white"} size={9} duration={1}>
+    <Page loader={"bar"} color={"#fff"} size={9} duration={1}>
     <Helmet>
     <title>{MainPageTitle}</title>
     </Helmet>

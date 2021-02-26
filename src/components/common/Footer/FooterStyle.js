@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
 
  footer: {
    marginTop: 'auto',
-   backgroundColor:"red",
+   backgroundColor:"rgb(255, 0, 32);",
    textAlign:"center",
    position:"fixed",
    bottom: 0,
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
    marginBottom:"0px",
  },
  typo:{
-       color:"white",
+       color:"#fff",
        fontWeight: "bolder",
  }
 }));
