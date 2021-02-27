@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
-        left:"200px",
+        top:"90px",
+        left:"0px",
       },
       [theme.breakpoints.up('lg')]: {
       },
@@ -46,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
         left:"-17px"
       },
       [theme.breakpoints.up('md')]: {
+        position:"relative",
+        top:"100px",
+        left:"0px",
       },
       [theme.breakpoints.up('lg')]: {
       },
