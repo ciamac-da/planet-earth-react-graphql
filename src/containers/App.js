@@ -8,10 +8,11 @@ import { Helmet } from "react-helmet";
 import WrongPath from "../components/common/404/404";
 import MyAppBar from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer';
+import SearchFilter from '../components/Main/MainSearch';
 
 
 const App = () =>{
-  const MainPageTitle = "React-GraphQL-Countries";
+  const MainPageTitle = "Planet Earth";
 
   const client = new ApolloClient({
     uri: 'https://countries.trevorblades.com/'
@@ -27,8 +28,9 @@ const App = () =>{
       <Router>
       <Switch>
        <Route path="/" exact        component={CountriesContainer} />
-      <Route                        component={WrongPath}     /> 
-      <Route path="*" exact         component={WrongPath}     />
+       <Route path="/search"        component={SearchFilter} />
+       <Route                       component={WrongPath}          /> 
+       <Route path="*" exact        component={WrongPath}          />
         </Switch>
       </Router>
       <Footer />
