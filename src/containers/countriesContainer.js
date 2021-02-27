@@ -4,7 +4,7 @@ import { GET_COUNTRIES } from '../graphql/get-countries';
 import { Countries } from "../components/Countries/CountriesTable";
 import myStyle from "./countriesContainerStyle";
 import TableHeader from '../components/Countries/CountriesTableHeader';
-import Main from '../components/Main/MainSearch';
+import Main from '../components/Main/Main';
 
 export const CountriesContainer = () =>{
 

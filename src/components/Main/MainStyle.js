@@ -15,12 +15,29 @@ const useStyles = makeStyles(() => ({
     flexDirection:"column",
     fontSize:"25px",
   },
-      inputStyle:{
+      TypoStyle:{
             margin: "0 auto",
             textAlign:"center !important",
-            textAlignLast: "center"
+            textAlignLast: "center",
+            fontSize: "17px",
+            paddingBottom: "10px",
           },
-       
+          myButton :{
+            margin: "0 auto",
+            textAlign:"center !important",
+            color: "#fff",
+            backgroundColor:"rgb(29, 148, 0)",
+            transform: "translateX(0px) !important",
+            transition: ".5s",
+            "&:hover":{
+                transform: "translateX(10px) !important",
+                transition: ".5s",
+                backgroundColor:"#0067b3"
+          }
+          },
+      linkStyle:{
+            textDecoration:"none !important",
+      }
 }));
 
 export default useStyles;

@@ -4,7 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { Input } from '@material-ui/core';
 import { useLazyQuery } from '@apollo/client';
 import gql from 'graphql-tag';
-import myStyle from "./MainStyle";
+import myStyle from "./SearchStyle";
 import { Countries } from '../Countries/CountriesTable';
 import { useQuery } from '@apollo/react-hooks';
 import { GET_COUNTRIES } from '../../graphql/get-countries';
