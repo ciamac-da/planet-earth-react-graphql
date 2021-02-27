@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   
   mainStyle:{
     backgroundColor:"#f58d06",
@@ -13,14 +13,42 @@ const useStyles = makeStyles(() => ({
     fontWeight:"bolder !important",
     //flexDirection:"column",
     fontSize:"25px",
+    [theme.breakpoints.down('sm')]: {
+        display:"flex",
+        flexDirection:"column",
+      },
+      [theme.breakpoints.up('md')]: {
+          display:"flex",
+          flexDirection:"column !important",
+    },
+      [theme.breakpoints.up('lg')]: {
+      },
   },
   firstMainStyle:{
-    position:"relative",
-    right:"-150px"
+    [theme.breakpoints.down('sm')]: {
+        position:"relative",
+        top:"70px",
+        left:"-20px",
+        
+      },
+      [theme.breakpoints.up('md')]: {
+        position:"relative",
+        left:"200px",
+      },
+      [theme.breakpoints.up('lg')]: {
+      },
+  
   },
   secondMainStyle:{
-   position:"relative",
-   right:"-1000px"
+    [theme.breakpoints.down('sm')]: {
+        position:"relative",
+        top:"80px",
+        left:"-17px"
+      },
+      [theme.breakpoints.up('md')]: {
+      },
+      [theme.breakpoints.up('lg')]: {
+      },
 },
       TypoStyle:{
             margin: "0 auto",
@@ -28,6 +56,16 @@ const useStyles = makeStyles(() => ({
             textAlignLast: "center",
             fontSize: "17px",
             paddingBottom: "10px",
+            [theme.breakpoints.down('sm')]: {
+                position:"relative",
+                left:"20px"
+              },
+              [theme.breakpoints.up('md')]: {
+                position:"relative",
+                left:"30px",
+              },
+              [theme.breakpoints.up('lg')]: {
+              },
           },
           myButton :{
             margin: "0 auto",
@@ -40,8 +78,19 @@ const useStyles = makeStyles(() => ({
                 transform: "translateX(10px) !important",
                 transition: ".5s",
                 backgroundColor:"#0067b3"
-          }
           },
+          [theme.breakpoints.down('sm')]: {
+            position:"relative",
+            left:"20px"
+          },
+          [theme.breakpoints.up('md')]: {
+            position:"relative",
+            left:"30px",
+          },
+          [theme.breakpoints.up('lg')]: {
+          },
+          },
+         
       linkStyle:{
             textDecoration:"none !important",
       }
