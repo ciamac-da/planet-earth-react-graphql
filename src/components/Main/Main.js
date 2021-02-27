@@ -1,10 +1,10 @@
 import React from 'react';
 import { AlertTitle } from '@material-ui/lab';
 import SearchIcon from '@material-ui/icons/Search';
+import GTranslateIcon from '@material-ui/icons/GTranslate';
 import { Typography, Button } from '@material-ui/core/';
 import myStyle from "./MainStyle";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 export default function Main(){
 
@@ -13,15 +13,19 @@ export default function Main(){
 
 return(
         <>
-        <AlertTitle className={classes.mainStyle}                 >
-         <Typography className={classes.TypoStyle}                >  Click here to serach through Countries based on Languages  </Typography>
-         <Link      className={classes.linkStyle} to="/search"    >                                                                       
-         <Button    className={classes.myButton}                  >              <SearchIcon />   Search                          </Button>   
-         </Link>       
-         <Typography className={classes.TypoStyle}                >            Click here to Translate languages                </Typography>
-         <Link      className={classes.linkStyle} to="/translate" >                                                                      
-         <Button    className={classes.myButton}                  >              <SearchIcon />   Translate                       </Button>   
-         </Link>       
+        <AlertTitle  className={classes.mainStyle}                 >
+        <Typography  className={classes.firstMainStyle}>
+         <Typography className={classes.TypoStyle}                 >  Click here to serach through Countries based on Languages  </Typography>
+         <NavLink    className={classes.linkStyle} to="/search"    >                                                                       
+         <Button     className={classes.myButton}                  >              <SearchIcon />   Search                        </Button>   
+         </NavLink>       
+        </Typography>
+        <Typography  className={classes.secondMainStyle}>
+         <Typography className={classes.TypoStyle}                 >            Click here to Translate languages                </Typography>
+         <NavLink    className={classes.linkStyle} to="/translate" >                                                                      
+         <Button     className={classes.myButton}                  >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
+         </NavLink>       
+        </Typography>
        </AlertTitle>
       </>
     )

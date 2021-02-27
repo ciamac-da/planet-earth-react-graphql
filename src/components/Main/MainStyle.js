@@ -6,15 +6,22 @@ const useStyles = makeStyles(() => ({
     backgroundColor:"#f58d06",
     height: "270px",
     display: "flex",
-    justifyContent: "center",
     textAlign: "center",
     color: "#fff",
     alignItems:"center",
     textShadow:"0px 1px 5px #000000",
     fontWeight:"bolder !important",
-    flexDirection:"column",
+    //flexDirection:"column",
     fontSize:"25px",
   },
+  firstMainStyle:{
+    position:"relative",
+    right:"-150px"
+  },
+  secondMainStyle:{
+   position:"relative",
+   right:"-1000px"
+},
       TypoStyle:{
             margin: "0 auto",
             textAlign:"center !important",
