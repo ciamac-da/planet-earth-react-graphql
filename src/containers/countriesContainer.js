@@ -16,7 +16,7 @@ export const CountriesContainer = () =>{
          <Main/>
          <TableHeader/>
          {countries.map(country => {
-        return  <Countries key={country.id}  myCountries={country} />
+        return  <Countries key={country.name}  myCountries={country} />
          }
          )}
      </div>

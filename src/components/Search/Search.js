@@ -8,7 +8,7 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import myStyle from "./SearchStyle";
 
 
-export default function SearhFilter(){
+export default function SearchFilter(){
 const classes = myStyle()
     return(
         <>
