@@ -13,10 +13,14 @@ export default function Main(){
 
 return(
         <>
-        <AlertTitle className={classes.mainStyle}              >
-        <Typography className={classes.TypoStyle}              > Click here to serach through Countries based on Languages  </Typography>
-         <Link      className={classes.linkStyle} to="/search" >                                                                      
-         <Button    className={classes.myButton}               >             <SearchIcon />   Search                          </Button>   
+        <AlertTitle className={classes.mainStyle}                 >
+         <Typography className={classes.TypoStyle}                >  Click here to serach through Countries based on Languages  </Typography>
+         <Link      className={classes.linkStyle} to="/search"    >                                                                       
+         <Button    className={classes.myButton}                  >              <SearchIcon />   Search                          </Button>   
+         </Link>       
+         <Typography className={classes.TypoStyle}                >            Click here to Translate languages                </Typography>
+         <Link      className={classes.linkStyle} to="/translate" >                                                                      
+         <Button    className={classes.myButton}                  >              <SearchIcon />   Translate                       </Button>   
          </Link>       
        </AlertTitle>
       </>
