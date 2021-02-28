@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('lg')]: {
       },
   },
+  inputStyle:{
+    margin: "0 auto",
+    textAlign:"center !important",
+    textAlignLast: "center",
+   
+  },
   firstMainStyle:{
     [theme.breakpoints.down('sm')]: {
         position:"relative",

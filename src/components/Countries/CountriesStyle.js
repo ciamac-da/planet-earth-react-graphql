@@ -33,6 +33,17 @@ const useStyles = makeStyles((theme) => ({
             transition: ".5s"
       }
     },
+    myFlagCell:{
+      width:"70px",
+      fontSize:"30px",
+      textAlign:"center",
+      transform: "translateX(0px) !important",
+      transition: ".5s",
+      "&:hover":{
+         transform: "translateX(10px) !important",
+         transition: ".5s"
+   }
+ },
     myCellHead:{
         width:"70px",
         textAlign:"left",
@@ -76,11 +87,10 @@ const useStyles = makeStyles((theme) => ({
      }
     },
     mySpan:{
-   display:"flex",
-   flexDirection:"column",
-   position: "relative",
-   right:"35px"
-
+         display:"flex",
+         flexDirection:"column",
+          position: "relative",
+          right:"35px"
     },
     myTypo:{
         color:"#fff",
@@ -90,13 +100,14 @@ const useStyles = makeStyles((theme) => ({
     },
     myTypoCountry:{
         color:"#fff",
-        fontSize:"16px",
+        fontSize:"20px",
         fontWeight:"bolder !important",
         margin:"-3px",
         position:"relative",
         left:"35px",
         [theme.breakpoints.down('sm')]: {
-            left: "-5px !important",
+          left: "-5px !important",
+          textAlign : "center",
           },
           [theme.breakpoints.up('md')]: {
             right: "30px !important",
@@ -104,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     },
     myTypoFlag:{
         color:"#fff",
-        fontSize:"16px",
+        fontSize:"20px",
         fontWeight:"bolder !important",
         margin:"-3px",
         textAlign: "center",
@@ -118,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
           }, 
     }, myTypoCode:{
         color:"#fff",
-        fontSize:"16px",
+        fontSize:"20px",
         textAlign: "left",
         position: "relative",
         left: "-10px !important",
@@ -133,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
     },
     myTypoLanguage:{
         color:"#fff",
-        fontSize:"16px",
+        fontSize:"20px",
         textAlign: "center",
         position: "relative",
         left: "11px !important",
