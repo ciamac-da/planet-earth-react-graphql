@@ -38,7 +38,7 @@ export function Countries({myCountries}) {
   <div className={classes.myList}>
    <TableContainer component={Paper} >
     <Table>
-     <TableRow>
+     <TableRow className={classes.mainRow}>
        <TableCell  className={classes.myFlagCell}>      {myCountries.emoji}     </TableCell>
        <TableCell  className={classes.myCell}>       {myCountries.name}     </TableCell>
        <TableCell  className={classes.myCell}>       {myCountries.code}     </TableCell>
@@ -47,8 +47,8 @@ export function Countries({myCountries}) {
        <TableCell  className={classes.myProblem}> {myCountries.languages.slice(0, 4).map(individualLanguage => (
        <Typography className={classes.mySpan} component="span"  key={`${individualLanguage.name}`}>{individualLanguage.name}</Typography>
         ))}
-        <FormControlLabel
-        control={<GreenCheckbox checkedA={state.checkedA} onChange={handleChange} name="checkedA" />}
+        <FormControlLabel className={classes.myCheckbox}
+        control={<GreenCheckbox  checkedA={state.checkedA} onChange={handleChange} name="checkedA" />}
         label=""
       />
       </TableCell>

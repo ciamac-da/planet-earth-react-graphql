@@ -13,8 +13,12 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom:"5px",
         backgroundColor: "#0067b3;"
     },
+    mainRow:{
+      height:"150px"
+    },
     myRow:{
         fontSize:"30px",
+        position:"sticky",
         color: "#fff !important",
         backgroundColor: "rgb(29, 148, 0)",
         transition: "1s",
@@ -35,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     },
     myFlagCell:{
       width:"70px",
-      fontSize:"30px",
+      fontSize:"35px",
       textAlign:"center",
       transform: "translateX(0px) !important",
       transition: ".5s",
@@ -77,6 +81,8 @@ const useStyles = makeStyles((theme) => ({
      }
     },
     myProblem:{
+        position:"relative",
+        right:"120px !important",
         width:"70px",
         textAlign:"center",
         transform: "translateX(0px) !important",
@@ -84,13 +90,19 @@ const useStyles = makeStyles((theme) => ({
         "&:hover":{
            transform: "translateX(10px) !important",
            transition: ".5s"
-     }
+     },
+     [theme.breakpoints.down('sm')]: {
+      right: "0px",
+    },
+    [theme.breakpoints.up('md')]: {
+      right: "50px",
+    }, 
     },
     mySpan:{
          display:"flex",
          flexDirection:"column",
           position: "relative",
-          right:"35px"
+          right:"35px",
     },
     myTypo:{
         color:"#fff",
@@ -100,22 +112,22 @@ const useStyles = makeStyles((theme) => ({
     },
     myTypoCountry:{
         color:"#fff",
-        fontSize:"20px",
+        fontSize:"20px !important",
         fontWeight:"bolder !important",
         margin:"-3px",
         position:"relative",
-        left:"35px",
+        left:"15px !important",
         [theme.breakpoints.down('sm')]: {
           left: "-5px !important",
           textAlign : "center",
           },
           [theme.breakpoints.up('md')]: {
-            right: "30px !important",
+            left:"0px"
           }, 
     },
     myTypoFlag:{
         color:"#fff",
-        fontSize:"20px",
+        fontSize:"20px !important",
         fontWeight:"bolder !important",
         margin:"-3px",
         textAlign: "center",
@@ -129,10 +141,10 @@ const useStyles = makeStyles((theme) => ({
           }, 
     }, myTypoCode:{
         color:"#fff",
-        fontSize:"20px",
+        fontSize:"20px !important",
         textAlign: "left",
         position: "relative",
-        left: "-10px !important",
+        left: "0px",
         fontWeight:"bolder !important",
         margin:"-3px",
         [theme.breakpoints.down('sm')]: {
@@ -144,18 +156,34 @@ const useStyles = makeStyles((theme) => ({
     },
     myTypoLanguage:{
         color:"#fff",
-        fontSize:"20px",
+        fontSize:"20px !important",
         textAlign: "center",
         position: "relative",
-        left: "11px !important",
+        left: "-120px !important",
         fontWeight:"bolder !important",
         margin:"-3px",
         [theme.breakpoints.down('sm')]: {
             left: "-10px !important",
           },
           [theme.breakpoints.up('md')]: {
-            right: "40px !important",
+            position: "relative",
+            left: "-100px !important",
           }, 
+          [theme.breakpoints.up('lg')]: {
+            position: "relative",
+            left: "-60px !important",
+          }, 
+          
     },
+    myCheckbox:{
+      position:"relative !important",
+      right:"40px !important",
+      [theme.breakpoints.down('sm')]: {
+        left: "-18px !important",
+      },
+      [theme.breakpoints.up('md')]: {
+        right: "22px !important",
+      }, 
+    }
 }));
 export default useStyles;
