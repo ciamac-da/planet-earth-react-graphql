@@ -1,15 +1,30 @@
-import React from 'react';
+import React, {useState, useMemo} from 'react';
 import { AlertTitle } from '@material-ui/lab';
 import SearchIcon from '@material-ui/icons/Search';
 import GTranslateIcon from '@material-ui/icons/GTranslate';
 import { Typography, Button, Input } from '@material-ui/core/';
 import myStyle from "./MainStyle";
 import { NavLink } from "react-router-dom";
+import { useQuery } from '@apollo/react-hooks';
+import { GET_COUNTRIES } from '../../graphql/get-countries';
 
 export default function Main(){
 
     const classes = myStyle()
-    
+    const [search, setSearch] = useState("")
+
+const { data: { countries = []} = {}  } = useQuery(GET_COUNTRIES,{
+});
+
+const mycountries = useMemo(() => {
+if (!search)
+return countries
+
+return countries.filter( country => {
+ return country.name.toLowerCase().includes( search.toLowerCase())
+})
+
+}, [search, countries])
 
 return(
         <>
@@ -22,6 +37,8 @@ return(
            placeholder="Search a Language..."
            autoComplete="off"
            className={classes.inputStyle}
+           onChange={e => setSearch(e.target.value)} 
+
           />
        {/*   <NavLink    className={classes.linkStyle} to="/search"    >                                                                       
          <Button     className={classes.myButton}                  >              <SearchIcon />   Search                        </Button>   

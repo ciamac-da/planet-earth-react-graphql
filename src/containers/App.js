@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet";
 import WrongPath from "../components/common/404/404";
 import MyAppBar from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer';
-import SearchFilter from '../components/Search/Search';
 import Translate from '../components/Translate/Translate';
 
 
@@ -29,7 +28,6 @@ const App = () =>{
       <Router>
       <Switch>
        <Route path="/" exact        component={CountriesContainer} />
-       <Route path="/search"        component={SearchFilter}       />
        <Route path="/translate"        component={Translate}       />
        <Route                       component={WrongPath}          /> 
        <Route path="*" exact        component={WrongPath}          />
