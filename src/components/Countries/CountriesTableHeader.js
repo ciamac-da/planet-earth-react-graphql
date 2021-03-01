@@ -11,18 +11,18 @@ export default function TableHeader(){
     return(
         <Table className={classes.myTable}>
             <TableHead>
-                <TableRow       className={classes.myRow} >
-                    <TableCell  className={classes.myCellHead}>
-                    <Typography className={classes.myTypoFlag}>    Flag      </Typography>
+                <TableRow       className={classes.myRow}          >
+                    <TableCell  className={classes.myCellHead}     >
+                    <Typography className={classes.myTypoFlag}     >       Flag      </Typography>
                     </TableCell>
-                    <TableCell  className={classes.myCellHead}>
-                    <Typography className={classes.myTypoCountry}>    Country Name </Typography>
+                    <TableCell  className={classes.myCellHead}     >
+                    <Typography className={classes.myTypoCountry}  >    Country Name </Typography>
                     </TableCell>
-                    <TableCell  className={classes.myCellHead}> 
-                    <Typography className={classes.myTypoCode}>       Code      </Typography>
+                    <TableCell  className={classes.myCellHead}     > 
+                    <Typography className={classes.myTypoCode}     >       Code      </Typography>
                      </TableCell>
-                    <TableCell  className={classes.myCellHead}> 
-                    <Typography className={classes.myTypoLanguage}>     Language/s  </Typography>
+                    <TableCell  className={classes.myCellHead}     > 
+                    <Typography className={classes.myTypoLanguage} >     Language/s  </Typography>
                     </TableCell>
                 </TableRow>
             </TableHead>

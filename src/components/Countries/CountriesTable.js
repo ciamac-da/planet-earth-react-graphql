@@ -1,11 +1,6 @@
-import  React  from 'react';
-import Table          from "@material-ui/core/Table";
-import TableCell      from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableRow       from "@material-ui/core/TableRow";
-import Paper          from "@material-ui/core/Paper";
+import  React, { useState, useMemo }  from 'react';
+import {Paper ,TableContainer, Table, TableRow, TableCell, Typography}  from "@material-ui/core/";
 import myStyle from "./CountriesStyle";
-import Typography  from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { withStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
@@ -26,6 +21,18 @@ const GreenCheckbox = withStyles({
 
 export function Countries({myCountries}) {
     const classes = myStyle();
+    const [search, setSearch] = useState("")
+    const countries = useMemo(() => {
+    if (!search)
+    return myCountries
+
+    return myCountries.filter( country => {
+      return country.name.toLowerCase().includes( search.toLocaleLowerCase())
+    })
+
+    }, [search, myCountries])
+
+
     const [state, setState] = React.useState({
       checkedA: true,
     });
@@ -35,12 +42,17 @@ export function Countries({myCountries}) {
     };
   
     return( 
+<>
+      <input
+      value={search}
+      onChange={e => setSearch(e.target.value)}
+       />
   <div className={classes.myList}>
    <TableContainer component={Paper} >
     <Table>
      <TableRow className={classes.mainRow}>
        <TableCell  className={classes.myFlagCell}>      {myCountries.emoji}     </TableCell>
-       <TableCell  className={classes.myCell}>       {myCountries.name}     </TableCell>
+       <TableCell  className={classes.myCell}>       {countries.name}     </TableCell>
        <TableCell  className={classes.myCell}>       {myCountries.code}     </TableCell>
        <TableCell  className={classes.myCell}>  {myCountries.languages.name} </TableCell>
       
@@ -56,7 +68,7 @@ export function Countries({myCountries}) {
     </Table>
    </TableContainer>       
 </div>
-
+</>
 
     )
 }

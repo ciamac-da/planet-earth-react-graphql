@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
            transition: ".5s"
      },
      [theme.breakpoints.down('sm')]: {
-      right: "0px",
+      right: "0px !important",
     },
     [theme.breakpoints.up('md')]: {
       right: "50px",
@@ -122,8 +122,12 @@ const useStyles = makeStyles((theme) => ({
           textAlign : "center",
           },
           [theme.breakpoints.up('md')]: {
-            left:"0px"
+            left:"-10px !important"
           }, 
+          [theme.breakpoints.up('lg')]: {
+            left:"50px !important"
+          }, 
+          
     },
     myTypoFlag:{
         color:"#fff",
@@ -152,6 +156,9 @@ const useStyles = makeStyles((theme) => ({
           },
           [theme.breakpoints.up('md')]: {
             right: "50px !important",
+          }, 
+          [theme.breakpoints.up('lg')]: {
+            left: "25px !important",
           }, 
     },
     myTypoLanguage:{
