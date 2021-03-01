@@ -29,38 +29,53 @@ const useStyles = makeStyles((theme) => ({
   },
   inputStyle:{
     margin: "0 auto",
+    display:"flex",
     textAlign:"center !important",
     textAlignLast: "center",
    
+  },
+  searchIcon:{
+    position:"relative", 
+    top:"7px"
   },
   firstMainStyle:{
     [theme.breakpoints.down('sm')]: {
         position:"relative",
         top:"70px",
-        left:"-20px",
+        left:"0px",
         
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
-        top:"90px",
-        left:"0px",
+        top:"130px",
+        left:"-190px",
       },
       [theme.breakpoints.up('lg')]: {
+        position:"relative",
+        top:"140px",
+        left:"-370px"
       },
   
   },
   secondMainStyle:{
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"center",
+      textAlign:"center",
     [theme.breakpoints.down('sm')]: {
         position:"relative",
-        top:"80px",
+        top:"85px",
         left:"-17px"
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
-        top:"100px",
-        left:"0px",
+        top:"70px",
+        left:"230px",
       },
       [theme.breakpoints.up('lg')]: {
+        position:"relative",
+        top:"70px",
+        left:"570px"
       },
 },
       TypoStyle:{

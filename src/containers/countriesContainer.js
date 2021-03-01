@@ -31,8 +31,7 @@ export const CountriesContainer = () =>{
      <div className={classes.Container}>
             <AlertTitle  className={classes.mainStyle}                 >
             <Typography  className={classes.firstMainStyle}>
-       {/*   <Typography className={classes.TypoStyle}                 >  Click here to serach through Countries based on Languages  </Typography> */}
-         <SearchIcon /> &nbsp; Searching through Countries based on Languages...
+         <SearchIcon className={classes.searchIcon} /> &nbsp; Searching through Countries based on Languages...
          <Input
             type="text"
             placeholder="Search a Language..."
