@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet";
 import WrongPath from "../components/common/404/404";
 import MyAppBar from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer';
-import Translate from '../components/Translate/Translate';
 
 
 const App = () =>{
@@ -28,7 +27,6 @@ const App = () =>{
       <Router>
       <Switch>
        <Route path="/" exact        component={CountriesContainer} />
-       <Route path="/translate"        component={Translate}       />
        <Route                       component={WrongPath}          /> 
        <Route path="*" exact        component={WrongPath}          />
         </Switch>

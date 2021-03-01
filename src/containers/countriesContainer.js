@@ -4,7 +4,12 @@ import { GET_COUNTRIES } from '../graphql/get-countries';
 import { Countries } from "../components/Countries/CountriesTable";
 import myStyle from "./countriesContainerStyle";
 import TableHeader from '../components/Countries/CountriesTableHeader';
-import Main from '../components/Main/Main';
+import { Typography, Button, Input } from '@material-ui/core/';
+import { AlertTitle } from '@material-ui/lab';
+import SearchIcon from '@material-ui/icons/Search';
+import { NavLink } from "react-router-dom";
+import GTranslateIcon from '@material-ui/icons/GTranslate';
+
 
 export const CountriesContainer = () =>{
     const [search, setSearch] = useState("")
@@ -24,10 +29,28 @@ export const CountriesContainer = () =>{
     }, [search, countries])
  return(
      <div className={classes.Container}>
-         <Main/>
-         <input 
-         style={{position:"relative", top:"-10px", height:"100px"}}
-         onChange={e => setSearch(e.target.value)} />
+            <AlertTitle  className={classes.mainStyle}                 >
+            <Typography  className={classes.firstMainStyle}>
+       {/*   <Typography className={classes.TypoStyle}                 >  Click here to serach through Countries based on Languages  </Typography> */}
+         <SearchIcon /> &nbsp; Searching through Countries based on Languages...
+         <Input
+            type="text"
+            placeholder="Search a Language..."
+            autoComplete="off"
+            className={classes.inputStyle}
+            onChange={e => setSearch(e.target.value)} 
+           />
+      
+        </Typography>
+        <Typography  className={classes.secondMainStyle}>
+         <Typography className={classes.TypoStyle}                 >            Click here to Translate languages                </Typography>
+         <NavLink    className={classes.linkStyle} to="/translate" >                                                                      
+         <Button     className={classes.myButton}                  >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
+         </NavLink>       
+        </Typography>
+        
+
+        </AlertTitle>
          <TableHeader/>
          {mycountries.map(country => {
         return  <Countries key={country.name}  myCountries={country} />
