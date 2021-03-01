@@ -47,9 +47,13 @@ const useStyles = makeStyles(() => ({
             textDecoration:"inherit !important",
             position: "relative",
             top:"300px",
+            transform: "translateX(0px) !important",
+            transition: ".5s",
             "&:hover":{
                   backgroundColor:"rgb(255, 0, 32)",
                   color:"#fff",
+                  transform: "translateX(-10px) !important",
+                  transition: ".5s",
             }
       },
       link:{

@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems:"center",
     textShadow:"0px 1px 5px #000000",
     fontWeight:"bolder !important",
-    //flexDirection:"column",
     fontSize:"25px",
     [theme.breakpoints.down('sm')]: {
         display:"flex",
@@ -39,20 +38,21 @@ const useStyles = makeStyles((theme) => ({
     top:"7px"
   },
   firstMainStyle:{
+      fontSize:"20px",
     [theme.breakpoints.down('sm')]: {
         position:"relative",
         top:"70px",
         left:"0px",
-        
+        fontSize:"16px",        
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
         top:"130px",
-        left:"-190px",
+        left:"-240px",
       },
       [theme.breakpoints.up('lg')]: {
         position:"relative",
-        top:"140px",
+        top:"135px",
         left:"-370px"
       },
   
@@ -65,7 +65,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
         position:"relative",
         top:"85px",
-        left:"-17px"
+        left:"-17px",
+        fontSize:"16px",        
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
@@ -75,18 +76,19 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('lg')]: {
         position:"relative",
         top:"70px",
-        left:"570px"
+        left:"410px"
       },
 },
       TypoStyle:{
             margin: "0 auto",
             textAlign:"center !important",
             textAlignLast: "center",
-            fontSize: "17px",
+            fontSize:"20px",
             paddingBottom: "10px",
             [theme.breakpoints.down('sm')]: {
                 position:"relative",
-                left:"20px"
+                left:"20px",
+                fontSize:"16px",        
               },
               [theme.breakpoints.up('md')]: {
                 position:"relative",

@@ -42,7 +42,7 @@ export const CountriesContainer = () =>{
       
         </Typography>
         <Typography  className={classes.secondMainStyle}>
-         <Typography className={classes.TypoStyle}                 >            Click here to Translate languages                </Typography>
+         <Typography className={classes.TypoStyle}                 >            Select 2 Languages and click here to Translate them                </Typography>
          <NavLink    className={classes.linkStyle} to="/translate" >                                                                      
          <Button     className={classes.myButton}                  >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
          </NavLink>       
