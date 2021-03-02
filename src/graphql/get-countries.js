@@ -8,6 +8,7 @@ query {countries{
   emoji
   languages{
     name
+    code
   }
 }
 }

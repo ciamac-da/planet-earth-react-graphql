@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     display:"flex",
     textAlign:"center !important",
     textAlignLast: "center",
+    color:"#fff"
    
   },
   searchIcon:{
@@ -55,6 +56,11 @@ const useStyles = makeStyles((theme) => ({
         top:"135px",
         left:"-370px"
       },
+      [theme.breakpoints.up('xl')]: {
+        position:"relative",
+        top:"135px",
+        left:"-380px"
+      },
   
   },
   secondMainStyle:{
@@ -77,6 +83,11 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         top:"70px",
         left:"410px"
+      },
+      [theme.breakpoints.up('xl')]: {
+        position:"relative",
+        top:"75px",
+        left:"570px"
       },
 },
       TypoStyle:{

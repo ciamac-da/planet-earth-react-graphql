@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from "react";
+import React, {useMemo, useState, useSelector} from "react";
 import { useQuery } from '@apollo/react-hooks';
 import { GET_COUNTRIES } from '../graphql/get-countries';
 import { Countries } from "../components/Countries/CountriesTable";
@@ -12,21 +12,31 @@ import GTranslateIcon from '@material-ui/icons/GTranslate';
 
 
 export const CountriesContainer = () =>{
-    const [search, setSearch] = useState("")
-
      const classes = myStyle()
      const { data: { countries = []} = {}  } = useQuery(GET_COUNTRIES,{
  });
+    const [search, setSearch] = useState("")
+    const [langs, setLangs] = useState([countries.languages]);
+    const [first, second] = langs
+    const selectLang = (lang) => setLangs([ lang, ...langs].slice(0,2));
 
+
+
+
+
+
+ 
  const mycountries = useMemo(() => {
-    if (!search)
-    return countries
-
-    return countries.filter( country => {
-      return country.name.toLowerCase().includes( search.toLowerCase())
-    })
-
+     if (!search)
+     return countries
+     
+     return countries.filter( country => {
+         return country.name.toLowerCase().startsWith(search.toLowerCase())
+        })
+        
     }, [search, countries])
+    
+
  return(
      <div className={classes.Container}>
             <AlertTitle  className={classes.mainStyle}                 >
@@ -34,7 +44,7 @@ export const CountriesContainer = () =>{
          <SearchIcon className={classes.searchIcon} /> &nbsp; Searching through Countries based on Languages...
          <Input
             type="text"
-            placeholder="Search a Language..."
+            placeholder="Search here...!"
             autoComplete="off"
             className={classes.inputStyle}
             onChange={e => setSearch(e.target.value)} 
@@ -43,9 +53,9 @@ export const CountriesContainer = () =>{
         </Typography>
         <Typography  className={classes.secondMainStyle}>
          <Typography className={classes.TypoStyle}                 >            Select 2 Languages and click here to Translate them                </Typography>
-         <NavLink    className={classes.linkStyle} to="/translate" >                                                                      
-         <Button     className={classes.myButton}                  >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
-         </NavLink>       
+         <Button     className={classes.myButton}   
+         onClick={ e => window.open(`https://translate.google.com/?sl=${first.languages.code}&tl=${second.languages.code}&op=translate`)}
+                        >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
         </Typography>
         
 
