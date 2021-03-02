@@ -45,10 +45,6 @@ export function Countries({myCountries}) {
        <TableCell  className={classes.myProblem}> {myCountries.languages.slice(0, 4).map(individualLanguage => (
        <Button className={classes.myButton}  key={`${individualLanguage.name}`}>{individualLanguage.name}</Button>
         ))}
-      
-          <Button     className={classes.myButton}   
-         onClick={ e => window.open(`https://translate.google.com/?sl=${first.languages}&tl=${second.languages}&op=translate`)}
-                        >          &nbsp;  Translate               </Button>   
       </TableCell>
      </TableRow>
     </Table>
