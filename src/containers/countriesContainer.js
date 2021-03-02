@@ -8,7 +8,7 @@ import { Typography, Button, Input } from '@material-ui/core/';
 import { AlertTitle } from '@material-ui/lab';
 import SearchIcon from '@material-ui/icons/Search';
 import GTranslateIcon from '@material-ui/icons/GTranslate';
-
+import ForwardIcon from '@material-ui/icons/Forward';
 
 
 export const CountriesContainer = () =>{
@@ -50,8 +50,11 @@ export const CountriesContainer = () =>{
                 <GTranslateIcon />  
                 &nbsp;  Translate              
          </Button>   
-        { first  ? first.name  : null }  
-        { second ? " => " + second.name : null }  
+         <Button>
+        { first  ? <Button className={classes.myButton}>{first.name}</Button>  : null }  
+        { first  ? <ForwardIcon className={classes.myIcon} /> : null} 
+        { second ?  <Button className={classes.myButton}>{second.name}</Button> : null }  
+         </Button>
         </Typography>    
         </AlertTitle>
          <TableHeader/>

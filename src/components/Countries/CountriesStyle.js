@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
             left:"-10px !important"
           }, 
           [theme.breakpoints.up('lg')]: {
-            left:"50px !important"
+            left:"20px !important"
           }, 
           
     },
@@ -156,10 +156,10 @@ const useStyles = makeStyles((theme) => ({
             left: "-5px !important",
           },
           [theme.breakpoints.up('md')]: {
-            right: "50px !important",
+            left: "-10px !important",
           }, 
           [theme.breakpoints.up('lg')]: {
-            left: "25px !important",
+            left: "-5px !important",
           }, 
     },
     myTypoLanguage:{
@@ -175,11 +175,11 @@ const useStyles = makeStyles((theme) => ({
           },
           [theme.breakpoints.up('md')]: {
             position: "relative",
-            left: "-100px !important",
+            left: "-60px !important",
           }, 
           [theme.breakpoints.up('lg')]: {
             position: "relative",
-            left: "-60px !important",
+            left: "-20px !important",
           }, 
           
     },
@@ -207,7 +207,8 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('sm')]: {
       position:"relative",
-      left:"20px"
+      left:"-20px",
+      marginBottom:"10px"
     },
     [theme.breakpoints.up('md')]: {
       position:"relative",
@@ -216,6 +217,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
     },
+  
     },
 }));
 export default useStyles;

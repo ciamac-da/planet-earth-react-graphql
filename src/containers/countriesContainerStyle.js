@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize:"20px",
     [theme.breakpoints.down('sm')]: {
         position:"relative",
-        top:"70px",
+        top:"60px",
         left:"0px",
         fontSize:"16px",        
       },
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign:"center",
     [theme.breakpoints.down('sm')]: {
         position:"relative",
-        top:"85px",
+        top:"60px",
         left:"-17px",
         fontSize:"16px",        
       },
@@ -134,6 +134,10 @@ const useStyles = makeStyles((theme) => ({
          
       linkStyle:{
             textDecoration:"none !important",
+      },
+      myIcon:{
+        position: "relative",
+        left:"30px"
       }
 }));
 
