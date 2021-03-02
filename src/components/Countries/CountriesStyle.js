@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#0067b3;"
     },
     mainRow:{
-      height:"150px"
+      height:"150px",
+      position: "-webkit-sticky !important",
     },
     myRow:{
         fontSize:"30px",

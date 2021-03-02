@@ -23,7 +23,6 @@ const App = () =>{
     </Helmet>
     <ApolloProvider client={client}>
     <MyAppBar />
-    {/*   <CountriesContainer /> */}
       <Router>
       <Switch>
        <Route path="/" exact        component={CountriesContainer} />
