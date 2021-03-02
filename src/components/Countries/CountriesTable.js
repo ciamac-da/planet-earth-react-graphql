@@ -43,16 +43,12 @@ export function Countries({myCountries}) {
        <TableCell  className={classes.myCell}>       {myCountries.code}     </TableCell>
        <TableCell  className={classes.myCell}>  {myCountries.languages.name} </TableCell>
        <TableCell  className={classes.myProblem}> {myCountries.languages.slice(0, 4).map(individualLanguage => (
-       <Typography className={classes.mySpan} component="span"  key={`${individualLanguage.name}`}>{individualLanguage.name}</Typography>
+       <Button className={classes.myButton}  key={`${individualLanguage.name}`}>{individualLanguage.name}</Button>
         ))}
-        <FormControlLabel className={classes.myCheckbox} 
-        control={<GreenCheckbox   checkedA={state.checkedA} onChange={handleChange} name="checkedA" />}
-        onChange={selectLang}
-      />
+      
           <Button     className={classes.myButton}   
          onClick={ e => window.open(`https://translate.google.com/?sl=${first.languages}&tl=${second.languages}&op=translate`)}
                         >          &nbsp;  Translate               </Button>   
-
       </TableCell>
      </TableRow>
     </Table>

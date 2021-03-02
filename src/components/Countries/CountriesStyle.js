@@ -191,6 +191,29 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('md')]: {
         right: "22px !important",
       }, 
-    }
+    },
+    myButton :{
+      margin: "0 auto",
+      textAlign:"center !important",
+      color: "#fff",
+      backgroundColor:"rgb(29, 148, 0)",
+      transform: "translateX(0px) !important",
+      transition: ".5s",
+      "&:hover":{
+          transform: "translateX(10px) !important",
+          transition: ".5s",
+          backgroundColor:"#0067b3"
+    },
+    [theme.breakpoints.down('sm')]: {
+      position:"relative",
+      left:"20px"
+    },
+    [theme.breakpoints.up('md')]: {
+      position:"relative",
+      left:"30px",
+    },
+    [theme.breakpoints.up('lg')]: {
+    },
+    },
 }));
 export default useStyles;
