@@ -1,25 +1,13 @@
 import  React, {useState}  from 'react';
 import {Paper ,TableContainer, Table, TableRow, TableCell, Typography, Button}  from "@material-ui/core/";
 import myStyle from "./CountriesStyle";
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { withStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
-import Checkbox from '@material-ui/core/Checkbox';
 
 
 
-const GreenCheckbox = withStyles({
-  root: {
-    color: green[400],
-    '&$checked': {
-      color: green[600],
-    },
-  },
-  checked: {},
-})((props) => <Checkbox color="default" {...props} />);
 
 
-export function Countries({myCountries}) {
+
+export function Countries({myCountries,addLang}) {
     const classes = myStyle();
     const [langs, setLangs] = useState([myCountries.languages]);
     const [first, second] = langs
@@ -43,7 +31,7 @@ export function Countries({myCountries}) {
        <TableCell  className={classes.myCell}>       {myCountries.code}     </TableCell>
        <TableCell  className={classes.myCell}>  {myCountries.languages.name} </TableCell>
        <TableCell  className={classes.myProblem}> {myCountries.languages.slice(0, 4).map(individualLanguage => (
-       <Button className={classes.myButton}  key={`${individualLanguage.name}`}>{individualLanguage.name}</Button>
+       <Button onClick={ e => addLang(individualLanguage) } className={classes.myButton}  key={`${individualLanguage.name}`}>{individualLanguage.name}</Button>
         ))}
       </TableCell>
      </TableRow>

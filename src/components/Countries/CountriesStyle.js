@@ -200,7 +200,7 @@ const useStyles = makeStyles((theme) => ({
       transform: "translateX(0px) !important",
       transition: ".5s",
       "&:hover":{
-          transform: "translateX(10px) !important",
+          transform: "translateX(2px) !important",
           transition: ".5s",
           backgroundColor:"#0067b3"
     },

@@ -18,24 +18,19 @@ export const CountriesContainer = () =>{
     const [search, setSearch] = useState("")
     const [langs, setLangs] = useState([countries.languages]);
     const [first, second] = langs
-    const selectLang = (lang) => setLangs([ lang, ...langs].slice(0,2));
-
-
-
-
+    const selectLang = (lang) => setLangs([lang, ...langs].slice(0,2));
 
 
  
- const mycountries = useMemo(() => {
-     if (!search)
-     return countries
-     
-     return countries.filter( country => {
-         return country.name.toLowerCase().startsWith(search.toLowerCase())
-        })
+    const mycountries = useMemo(() => {
+        if (!search)
+        return countries
         
+        return countries.filter( country => {
+            return country.languages.filter( l=> l.name.toLowerCase().startsWith(search.toLowerCase()) ).length > 0
+            })
     }, [search, countries])
-    
+
 
  return(
      <div className={classes.Container}>
@@ -48,21 +43,21 @@ export const CountriesContainer = () =>{
             autoComplete="off"
             className={classes.inputStyle}
             onChange={e => setSearch(e.target.value)} 
-           />
-      
+           />      
         </Typography>
         <Typography  className={classes.secondMainStyle}>
          <Typography className={classes.TypoStyle}                 >            Select 2 Languages and click here to Translate them                </Typography>
-         <Button     className={classes.myButton}   
-         onClick={ e => window.open(`https://translate.google.com/?sl=${first.languages.code}&tl=${second.languages.code}&op=translate`)}
-                        >         <GTranslateIcon />  &nbsp;  Translate               </Button>   
-        </Typography>
-        
-
+         <Button     className={classes.myButton}
+            onClick={ e =>
+                window.open(`https://translate.google.com/?sl=${first.code}&tl=${second.code}&op=translate`)}
+        > <GTranslateIcon />  &nbsp;  Translate               </Button>   
+        { first  ? first.name  : null }  
+        { second ? " => " + second.name : null }  
+        </Typography>       
         </AlertTitle>
          <TableHeader/>
          {mycountries.map(country => {
-        return  <Countries key={country.name}  myCountries={country} />
+        return  <Countries key={country.name}  myCountries={country} addLang={selectLang} />
          }
          )}
      </div>
