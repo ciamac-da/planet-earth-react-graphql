@@ -51,9 +51,9 @@ export const CountriesContainer = () =>{
                 &nbsp;  Translate              
          </Button>   
          <Button>
-        { first  ? <Button className={classes.myButton}>{first.name}</Button>  : null }  
-        { first  ? <ForwardIcon className={classes.myIcon} /> : null} 
-        { second ?  <Button className={classes.myButton}>{second.name}</Button> : null }  
+        { first  ?  <Button      className={classes.myButton}>   {first.name}  </Button>  : null }  
+        { first  ?  <ForwardIcon className={classes.myIcon} />    : null    } 
+        { second ?  <Button      className={classes.myButton}>  {second.name}  </Button>  : null }  
          </Button>
         </Typography>    
         </AlertTitle>

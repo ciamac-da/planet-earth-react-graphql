@@ -198,10 +198,10 @@ const useStyles = makeStyles((theme) => ({
       textAlign:"center !important",
       color: "#fff",
       backgroundColor:"rgb(29, 148, 0)",
-      transform: "translateX(0px) !important",
+      transform: "translateY(10px) !important",
       transition: ".5s",
       "&:hover":{
-          transform: "translateX(2px) !important",
+          transform: "translateY(2px) !important",
           transition: ".5s",
           backgroundColor:"#0067b3"
     },

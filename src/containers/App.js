@@ -39,4 +39,3 @@ const App = () =>{
 export default App;
 
 
-/* "homepage": "https://ciamac-da.github.io/planet-earth-react-graphql", */
