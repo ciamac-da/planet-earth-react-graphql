@@ -20,14 +20,15 @@ https://ciamac-da.github.io/planet-earth-react-graphql/
 ![](readmeImages/4.jpg)
 
 # Google Translate opens up!
-
-# How does it looks like on Mobile(in this case iPhone-X)
 ![](readmeImages/5.jpg)
 
-
-# How does it looks like on Tablets(in this case iPad-Pro)
+# How does it looks like on Mobile(in this case iPhone-X)
 ![](readmeImages/6.jpg)
 
 
-# Implementing 404 page! 🛑
+# How does it looks like on Tablets(in this case iPad-Pro)
 ![](readmeImages/7.jpg)
+
+
+# Implementing 404 page! 🛑
+![](readmeImages/8.jpg)
