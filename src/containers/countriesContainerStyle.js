@@ -41,15 +41,15 @@ const useStyles = makeStyles((theme) => ({
   firstMainStyle:{
       fontSize:"20px",
     [theme.breakpoints.down('sm')]: {
-        position:"relative",
-        top:"60px",
-        left:"0px",
+        position:"relative !important",
+        top:"60px !important",
+        left:"0px !important",
         fontSize:"16px",        
       },
       [theme.breakpoints.up('md')]: {
-        position:"relative",
-        top:"130px",
-        left:"-240px",
+        position:"relative !important",
+        top:"130px !important",
+        left:"-240px !important",
       },
       [theme.breakpoints.up('lg')]: {
         position:"relative",
@@ -64,15 +64,15 @@ const useStyles = makeStyles((theme) => ({
   
   },
   secondMainStyle:{
-      display:"flex",
-      flexDirection:"column",
-      justifyContent:"center",
-      textAlign:"center",
+      display:"flex !important",
+      flexDirection:"column !important",
+      justifyContent:"center !important",
+      textAlign:"center !important",
     [theme.breakpoints.down('sm')]: {
-        position:"relative",
-        top:"60px",
-        left:"-17px",
-        fontSize:"16px",        
+        position:"relative !important",
+        top:"60px !important",
+        left:"-17px !important",
+        fontSize:"16px !important",        
       },
       [theme.breakpoints.up('md')]: {
         position:"relative",
