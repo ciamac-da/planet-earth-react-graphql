@@ -12,7 +12,6 @@ import Footer from '../components/common/Footer/Footer';
 
 const App = () =>{
   const MainPageTitle = "Planet Earth Countries";
-
   const client = new ApolloClient({
     uri: 'https://countries.trevorblades.com/'
   });
