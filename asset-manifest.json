@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/planet-earth-react-graphql/static/css/main.c27100cc.chunk.css",
-    "main.js": "/planet-earth-react-graphql/static/js/main.4559a06a.chunk.js",
-    "main.js.map": "/planet-earth-react-graphql/static/js/main.4559a06a.chunk.js.map",
-    "runtime-main.js": "/planet-earth-react-graphql/static/js/runtime-main.fbe7541b.js",
-    "runtime-main.js.map": "/planet-earth-react-graphql/static/js/runtime-main.fbe7541b.js.map",
-    "static/js/2.682e2ae5.chunk.js": "/planet-earth-react-graphql/static/js/2.682e2ae5.chunk.js",
-    "static/js/2.682e2ae5.chunk.js.map": "/planet-earth-react-graphql/static/js/2.682e2ae5.chunk.js.map",
-    "index.html": "/planet-earth-react-graphql/index.html",
-    "static/css/main.c27100cc.chunk.css.map": "/planet-earth-react-graphql/static/css/main.c27100cc.chunk.css.map",
-    "static/js/2.682e2ae5.chunk.js.LICENSE.txt": "/planet-earth-react-graphql/static/js/2.682e2ae5.chunk.js.LICENSE.txt",
-    "static/media/milkyway.b5734c67.jpeg": "/planet-earth-react-graphql/static/media/milkyway.b5734c67.jpeg"
+    "main.css": "/static/css/main.c27100cc.chunk.css",
+    "main.js": "/static/js/main.f9cae002.chunk.js",
+    "main.js.map": "/static/js/main.f9cae002.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.59bd893d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.59bd893d.js.map",
+    "static/js/2.682e2ae5.chunk.js": "/static/js/2.682e2ae5.chunk.js",
+    "static/js/2.682e2ae5.chunk.js.map": "/static/js/2.682e2ae5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c27100cc.chunk.css.map": "/static/css/main.c27100cc.chunk.css.map",
+    "static/js/2.682e2ae5.chunk.js.LICENSE.txt": "/static/js/2.682e2ae5.chunk.js.LICENSE.txt",
+    "static/media/milkyway.b5734c67.jpeg": "/static/media/milkyway.b5734c67.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbe7541b.js",
+    "static/js/runtime-main.59bd893d.js",
     "static/js/2.682e2ae5.chunk.js",
     "static/css/main.c27100cc.chunk.css",
-    "static/js/main.4559a06a.chunk.js"
+    "static/js/main.f9cae002.chunk.js"
   ]
 }
