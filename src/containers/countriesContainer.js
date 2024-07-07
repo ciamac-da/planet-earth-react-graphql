@@ -27,6 +27,7 @@ export const CountriesContainer = () =>{
             })
     }, [search, countries])
 
+    
 
  return(
      <div className={classes.Container}>
@@ -42,9 +43,9 @@ export const CountriesContainer = () =>{
             onChange={e => setSearch(e.target.value)} 
            /> 
          </Typography>
-         <Typography  className={classes.secondMainStyle}  >
-         <Typography className={classes.TypoStyle}         >   Select 2 Languages and click here to Translate them                </Typography>
-         <Button     className={classes.myButton}
+         <Typography  className={classes.secondMainStyle}   >
+         <Typography  className={classes.TypoStyle}         >   Select 2 Languages and click here to Translate them                </Typography>
+         <Button      className={classes.myButton}
             onClick={ e =>
                 window.open(`https://translate.google.com/?sl=${first.code}&tl=${second.code}&op=translate`)}> 
                 <GTranslateIcon />  

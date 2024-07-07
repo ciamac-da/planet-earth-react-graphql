@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Typography } from '@material-ui/core';
 import { Helmet } from "react-helmet";
-import Page from "react-page-loading";
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import { Link } from "react-router-dom";
 import useStyles from "./404Style";
@@ -12,7 +11,7 @@ const NotFound = () => {
       const WrongPathPageTitle = "Page not found!";
 
       return (
-            <Page loader={"bar"} color={"white"} size={9} duration={1}>
+            <div>
                   <Helmet>
                         <title>{WrongPathPageTitle}</title>
                   </Helmet>
@@ -49,7 +48,7 @@ const NotFound = () => {
                                    </Button>
                               </Link>
                         </div>
-            </Page>
+            </div>
       );
 };
 
